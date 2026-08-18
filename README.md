@@ -4,8 +4,6 @@
 <br>
 
 # Hello, I'm Jess 👋
-🎓 Southwest Technical College
-💻 Software Development 
 
 > **Software Developer** focused on building practical, reliable solutions to real-world problems.
 >

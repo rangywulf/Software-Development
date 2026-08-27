@@ -2,7 +2,7 @@ public class TestPassObject {
     /** Main method */
     public static void main(String[] args) {
         // Create a Circle object with radius 1
-        Circle myCircle = new Circle(1); // Use the Circle class in Listing 9.8
+        Circle9_10 myCircle = new Circle9_10(1); // Use the Circle class in Listing 9.8
     
 
     // Print areas for radius 1, 2, 3, 4, and 5.
@@ -15,7 +15,7 @@ public class TestPassObject {
     }
 
     /** Print a table of areas for radius */
-    public static void printAreas(Circle c, int times) {
+    public static void printAreas(Circle9_10 c, int times) {
         System.out.println("Radius \t\tArea");
         while (times >= 1) {
             System.out.println(c.getRadius() + "\t\t" + c.getArea());

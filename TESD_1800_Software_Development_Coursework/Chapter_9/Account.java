@@ -56,7 +56,7 @@ class Account {
 
     /** Get monthly interest rate */
     public double getMonthlyInterestRate() {
-        return annualInterestRate / 12;
+        return annualInterestRate / 100 / 12;
     }
 
     /** Get monthly interest */

@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-class Account {
+class Account9 {
     /** Create data fields */
     private int id = 0;
     private double balance = 0;
@@ -8,12 +8,12 @@ class Account {
     private LocalDate dateCreated;
 
     /** Create default account */
-    Account() {    
+    Account9() {    
         dateCreated = LocalDate.now();    
     }
 
     /** Creat account with id and initial balance */
-    Account(int newId, double newBalance) {
+    Account9(int newId, double newBalance) {
         id = newId;
         balance = newBalance;
         dateCreated = LocalDate.now();

@@ -2,7 +2,7 @@ public class TestAccount {
     /** Main Method */
     public static void main(String[] args) {
         // Create an Account
-        Account account = new Account(1122, 20000);
+        Account9 account = new Account9(1122, 20000);
 
         // Set the interest rate
         account.setAnnualInterestRate(4.5);

@@ -5,7 +5,8 @@ public class Student extends Person {
     public static final String JUNIOR = "Junior";
     public static final String SENIOR = "Senior";
 
-    public Student(String status) {
+    public Student(String name, String address, String phone, String email, String status) {
+        super(name, address, phone, email);
         if (status.equals(FRESHMAN) ||
             status.equals(SOPHOMORE) ||
             status.equals(JUNIOR) ||

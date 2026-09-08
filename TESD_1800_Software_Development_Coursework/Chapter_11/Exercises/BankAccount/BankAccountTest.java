@@ -1,3 +1,9 @@
+/**
+ * Author: Jess
+ * Date: 9/8/2026 
+ * Description: Test checking and savings account rules.
+ */
+
 public class BankAccountTest {
     public static void main(String[] args) {
 

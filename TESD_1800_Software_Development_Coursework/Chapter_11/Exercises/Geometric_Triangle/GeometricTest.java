@@ -1,3 +1,11 @@
+/**
+ * Author: Jess
+ * Date: 09/08/2026
+ * Description: Tests the Triangle class by creating a triangle and displaying its area, 
+ * perimeter, color, and fill status.
+ */
+
+
 public class GeometricTest {
     /** Main Method */
     public static void main(String[] args) {

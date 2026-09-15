@@ -1,3 +1,10 @@
+/*
+Author: Jess Stubbs
+Date: 09/15/2026
+
+Prompts the user for an array index and safely handles out-of-bounds input using a try-catch block.
+*/
+
 import java.util.Scanner;
 
 public class ArrayOutofBounds {

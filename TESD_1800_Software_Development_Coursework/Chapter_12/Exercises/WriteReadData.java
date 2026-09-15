@@ -1,7 +1,14 @@
+/*
+Author: Jess Stubbs
+Date: 09/15/2026
+
+Writes 100 random integers to a file, reads them back into an array, and prints them sorted in increasing order.
+*/
+
 import java.io.File;
-import java.util.Scanner;
 import java.io.PrintWriter;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class WriteReadData {
     /** Main Method */

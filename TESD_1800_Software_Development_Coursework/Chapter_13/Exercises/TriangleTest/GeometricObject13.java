@@ -1,3 +1,11 @@
+/*
+Author: Jess Stubbs
+Date: 09/24/2026
+
+Description: A base class for geometric objects. It stores a color and
+whether the object is filled, and provides constructors, getters and
+setters for both, plus a toString method that displays them.
+*/
 public class GeometricObject13 {
     private String color;
     private boolean filled = false;

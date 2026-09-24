@@ -1,3 +1,12 @@
+/*
+Author: Jess Stubbs
+Date: 09/24/2026
+
+Description: A test program for the TriangleClass. It prompts the user
+for three side lengths, a color, and whether the triangle is filled,
+creates a triangle from that input, and displays its area, perimeter,
+color, and filled status.
+*/
 import java.util.Scanner;
 
 public class TriangleTest {

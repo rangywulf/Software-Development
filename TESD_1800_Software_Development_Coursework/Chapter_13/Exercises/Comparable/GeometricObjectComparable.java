@@ -1,3 +1,13 @@
+/*
+Author: Jess Stubbs
+Date: 09/24/2026
+
+Description: An abstract base class for geometric objects that can be
+compared by area. It stores a color, a filled status, and the date the
+object was created, and implements Comparable so objects are compared
+by their areas. It also includes a max method that returns the larger
+of two objects. Subclasses must provide getArea and getPerimeter.
+*/
 import java.util.Date;
 
 public abstract class GeometricObjectComparable implements Comparable<GeometricObjectComparable> {

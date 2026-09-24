@@ -1,3 +1,13 @@
+/*
+Author: Jess Stubbs
+Date: 09/24/2026
+
+Description: An abstract base class for geometric objects. It stores a
+color, a filled status, and the date the object was created, with
+constructors, getters, setters, and a toString method. Subclasses must
+provide their own getArea and getPerimeter methods.
+*/
+
 import java.util.Date;
 
 public abstract class GeoObject {

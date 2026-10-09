@@ -22,7 +22,7 @@ public class FourCards extends Application {
     @Override // override start method in Application
     public void start(Stage primaryStage) {
         // CreateDeck to fill the deck with 52 cards
-        
+        createDeck();
 
         // Create an HBox for the card row
         HBox hBox = new HBox(10); // spacing between cards is 10
@@ -55,6 +55,7 @@ public class FourCards extends Application {
         Scene scene = new Scene(vBox, 600, 300); // Set width to 600 and height to 300
         primaryStage.setTitle("Four Cards"); // Set the stage title to "Four Cards"
         primaryStage.setScene(scene); // Set the scene on the stage
+        refresh();
         primaryStage.show(); // Show the stage
     }
 
@@ -63,9 +64,6 @@ public class FourCards extends Application {
         // Create a file object using the cards folder path
         File folder = new File("D:/Python/swtech/Software-Development/TESD_1800_Software_Development_Coursework/Chapter_15/Exercises/cards");
         List<String> names = Arrays.asList(folder.list()); // file names
-        
-        // Convert the file names to a list of strings
-        List<String> names = Arrays.asList(folder.list());
 
         for (int i = 0; i < names.size(); i++) {// Loop through each file name
             // Skip the jokers
@@ -81,20 +79,18 @@ public class FourCards extends Application {
     /** refresh method */
     public void refresh() {
         // Shuffle the deck using Collections.shuffle
-        Collections.shuffle(names);
+        Collections.shuffle(deck);
         
         // loop while counter is less than 4
         for (int i = 0; i < 4; i++) {
-            // get the full path from deck at counter
-            // create an image using the full path
-            // create an Imageview using the image
-                // Set the Imageview width to 100
-                // keep the raio so the card is not stretched
-            // get the label from the cardLabels at counter
-            // set the label graphic to the ImageView
-            // add 1 to counter
+            String path = deck.get(i); // get the full path from deck at counter
+            Image image = new Image(path); // create an image using the full path
+            ImageView imageView = new ImageView(image); // create an Imageview using the image
+            imageView.setFitWidth(100); // Set the Imageview width to 100
+            imageView.setPreserveRatio(true); // keep the ratio so the card is not stretched
+
+            Label label = cardLabels.get(i); // get the label from the cardLabels at counter
+            label.setGraphic(imageView); // set the label graphic to the ImageView
         }
-        // do no remove cards from the deck
-            // every click reshuffles all 52, so no repeates in one hand
     }
 }

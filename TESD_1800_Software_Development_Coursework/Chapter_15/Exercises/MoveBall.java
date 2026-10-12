@@ -1,3 +1,14 @@
+/*
+Author: Jess Stubbs
+Date: 10/11/2026
+
+This JavaFX program displays a white circle in a 
+pane with four buttons below it: Left, Right, Up, and Down. 
+Each button moves the ball 10 pixels in that direction. 
+The program checks the ball’s edges against the pane’s 
+edges before each move, so the ball always stays in view.
+*/
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;

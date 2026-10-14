@@ -6,7 +6,7 @@ import javafx.scene.input.KeyCode;
 public class BounceBallControl extends Application {
     @Override // override start method in Application class
     public void start(Stage primaryStage) {
-        BallPane ballPane = new BallPane(); // create a ball pane
+        BallPane15 ballPane = new BallPane15(); // create a ball pane
 
         // Pause and resume animation
         ballPane.setOnMousePressed(e -> ballPane.pause());

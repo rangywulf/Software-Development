@@ -1,3 +1,12 @@
+/*
+Author: Jess Stubbs
+Date: 2026-10-15
+
+This program displays the message “Programming is fun” in a window. 
+Five radio buttons (Red, Yellow, Black, Orange, Green) change the 
+color of the message, and the <= and => buttons move it left and right.
+*/
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;

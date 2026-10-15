@@ -76,17 +76,33 @@ public class RadioButtons extends Application {
 
         // Create HBox for radio buttons
         HBox rbhBox = new HBox(10);
-        rbhBox.setAlignement(Pos.CENTER);
+        rbhBox.setAlignment(Pos.CENTER);
         rbhBox.getChildren().addAll(rbRed, rbYellow, rbBlack, rbOrange, rbGreen);
 
         // Create buttons
         Button btLeft = new Button("<=");
         Button btRight = new Button("=>");
 
+        // Set Action for buttons
+        btLeft.setOnAction(e -> text.setX(text.getX() - 10));
+        btRight.setOnAction(e -> text.setX(text.getX() + 10));
+
+        // Create HBox for buttons
+        HBox btHbox = new HBox(10);
+        btHbox.setAlignment(Pos.CENTER);
+        btHbox.getChildren().addAll(btLeft, btRight);
 
         // Create BorderPane
         BorderPane borderPane = new BorderPane();
-        borderPane.setTop(rbhBox);
+        borderPane.setTop(rbhBox); // set radio buttons to top
+        borderPane.setCenter(pane); // set message box to center
+        borderPane.setBottom(btHbox); // set button box to bottom
+
+        // Create scene and set stage
+        Scene scene = new Scene(borderPane, 400, 200);
+        primaryStage.setTitle("Radio Button Colors"); // set title for stage
+        primaryStage.setScene(scene); // place scene on stage
+        primaryStage.show(); // display stage
 
     }
     
